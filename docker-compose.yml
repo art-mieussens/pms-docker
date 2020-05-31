@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+
+  pms:
+    network_mode: host
+    image: plexinc/pms-docker
+    volumes:
+      - database:/config
+      - transcode_temp:/transcode
+      - ./media:/data"
+    env_file:
+      - .env/config
+      - .env/plex_claim
+
+volumes:
+  database:
+  transcode_temp:

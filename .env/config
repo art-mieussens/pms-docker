@@ -1,0 +1,4 @@
+TZ=Europe/London
+HOSTNAME=PlexServer
+PLEX_UID=32400
+PLEX_GID=32400
